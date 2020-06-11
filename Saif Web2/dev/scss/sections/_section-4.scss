@@ -1,0 +1,57 @@
+/* =============
+    Section 4
+============= */
+#section-4 {
+  margin-top: 60px;
+  #button {
+    grid-area: b;
+    color: $white;
+    background-color: $black;
+    height: fit-content;
+    padding: 2% 13% 2% 13%;
+    font-size: rem-calc(22);
+    width: fit-content;
+    margin-top: 600px;
+    a {
+      #line {
+        height: 4px;
+        width: 100%;
+        background-color: $red;
+        margin-top: -7px;
+        border-radius: 25px;
+      }
+    }
+    transition: .2s;
+    opacity: .8;
+    cursor: pointer;
+  }
+  #button:hover {
+    opacity: 1;
+  }
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-areas: ". b";
+  background-image: url('../img/section-4/hero-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  @include md {
+    #button {
+      margin-top: 480px
+    }
+    height: 90vh;
+  }
+  @include lg {
+    #button {
+      margin-top: 560px;
+    }
+    height: 100vh;
+  }
+  @include xl {
+    #button {
+      font-size: rem-calc(25);
+      margin-top: 580px;
+    }
+    height: 120vh;
+  }
+}

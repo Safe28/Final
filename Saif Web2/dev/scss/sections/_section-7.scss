@@ -1,0 +1,54 @@
+/* =============
+    Section 7
+============= */
+#section-7 {
+  margin-top: 8%;
+  #img {
+    grid-area: i;
+    img {
+      width: 100%;
+    }
+    margin-bottom: 8%;
+  }
+  #title {
+    grid-area: t;
+    font-size: rem-calc(19);
+    margin-bottom: 2%;
+  }
+  #pa {
+    grid-area: p;
+    margin-top: -10%;
+    font-size: rem-calc(12);
+    line-height: 1.2em;
+  }
+  #r {
+    grid-area: r;
+  }
+  p {
+    font-size: rem-calc(11.8);
+    line-height: 1.2em;
+    margin-bottom: 10%;
+  }
+  display: grid;
+  grid-template-columns: 4% 45% 2% 45% 4%;
+  grid-template-areas: ". i . t ."
+  ". i . p ."
+  ". r r r .";
+  @include md2 {
+    p {
+      font-size: rem-calc(16) !important;
+    }
+    #title {
+      font-size: rem-calc(22) !important;
+    }
+  }
+  @include md {
+    p {
+      font-size: rem-calc(18) !important;
+    }
+
+    #title {
+      font-size: rem-calc(24) !important;
+    }
+  }
+}

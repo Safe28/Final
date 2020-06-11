@@ -1,0 +1,90 @@
+/* =============
+    Section 8
+============= */
+#section-8 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  #ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 230px;
+    li {
+      margin: -80px 50% 20% 50%;
+    }
+  }
+  #l1 {
+    font-size: rem-calc(35);
+    #line {
+      height: 7px;
+      background-color: $red;
+      margin-top: -15%;
+      border-radius: 25px;
+      width: 100px;
+    }
+  }
+  #l2 {
+    padding-left: 150px;
+  }
+  #line2 {
+    height: 7px;
+    background-color: $red;
+    margin-top: -15%;
+    border-radius: 25px;
+    width: 30px;
+  }
+  img {
+    width: 100%;
+    margin: 0 5px 20px 5px;
+  }
+  #image1 {
+    grid-area: g1;
+  }
+  #image2 {
+    grid-area: g2;
+  }
+  #image3 {
+    grid-area: g3;
+  }
+  #image4 {
+    grid-area: g4;
+  }
+  #image5 {
+    grid-area: g5;
+  }
+  #image6 {
+    grid-area: g6;
+    img {
+      width: 101.7%;
+    }
+  }
+  #image7 {
+    grid-area: g7;
+  }
+  display: grid;
+  grid-template-columns: 2% auto 2%;
+  grid-template-areas: ".g1."
+  ".g2."
+  ".g3."
+  ".g4."
+  ".g5."
+  ".g6."
+  ".g7.";
+  @include md {
+    display: grid;
+    grid-template-columns: 4% 45% 2% 45% 4%;
+    grid-template-areas:
+      ". g1 . g2 ."
+      ".g3 g3 g3 ."
+      ".g4 . g5 ."
+      ".g6 . g7 .";
+  }
+  @include lg {
+    #ul {
+      margin-left: 450px;
+    }
+    #l2 {
+      padding-left: 500px;
+    }
+  }
+}

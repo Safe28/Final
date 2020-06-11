@@ -1,0 +1,50 @@
+/* =============
+    Section 6
+============= */
+#section-6 {
+    #button {
+        grid-area: b;
+        color: $white;
+        background-color: $black;
+        height: fit-content;
+        width: fit-content;
+        padding: 2% 13% 2% 13%;
+        font-size: rem-calc(18);
+        a {
+            #line {
+                height: 4px;
+                width: 100%;
+                background-color: $red;
+                margin-top: -7px;
+                border-radius: 25px;
+            }
+        }
+        position: absolute;
+        bottom: 18%;
+        left: 28%;
+    }
+    img {
+        width: 100%;
+    }
+    #bike {
+        grid-area: c;
+    }
+    #ai {
+        grid-area: i;
+    }
+    #aid {
+        position: relative;
+        z-index: -2;
+    }
+    @include md {
+        #section-6-all {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            grid-template-areas:
+                "c i";
+        }
+        #button {
+            bottom: 27% !important;
+        }
+    }
+}

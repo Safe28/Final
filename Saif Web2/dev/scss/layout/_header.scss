@@ -1,0 +1,122 @@
+/* =============
+    Header
+============= */
+header {
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    #content{
+        display: grid;
+        grid-template-areas: "logo burger"
+            "nav nav";
+        grid-template-columns: 80% auto;
+       
+
+        @include lg {
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
+        }
+
+        #logo-container {
+            grid-area: logo;
+            img{
+                width: 20%;
+                text-align: center;
+                @include lg{
+                    width: 40%;
+                }
+            }
+            
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 15px;
+            
+
+            @include lg {
+                display: none !important; 
+            }
+            i {
+                cursor: pointer;
+            }
+        }
+
+        #nav-container {
+            display: none;
+            grid-area: nav;
+            padding: 15px;
+            background-color: $cyan;
+            a:link,
+            a:visited {
+                color: $coal;
+                text-decoration: none;
+                transition: 0.2s;
+                font-size: 1.2em;
+            }
+
+            a:hover,
+            a:active {
+                color: $white;
+                padding: 0 20% 0 20%;
+                font-size: 1.2em;
+            }
+            @include lg {
+                display: block !important;
+            }
+        }
+        #line{
+            height: 10px;
+            width: 100%;
+            margin-left: 100%;
+            background-color: $cyan;
+            margin-top: -4%;
+            z-index: -1;
+        }
+        .fa-search{
+            color: $cyan;
+        }
+        #search{
+            margin-top: 3%;
+            *{
+                box-sizing: border-box;
+                padding-left: -100%;
+              }
+              form.example input[type=text]{
+                padding: 10px;
+                font-size: 17px;
+                float: left;
+                width: 80%;
+                border: none;
+                margin-left: -10%;
+              }
+              form.example button{
+                float: left;
+                width: 20%;
+                padding: 0px;
+                margin-top: 5px;
+                background: none;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+              }
+              form.example button:hover{
+                .fa-search{
+                    color: $coal;
+                }
+              }
+              form.example::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+        }
+    }
+}

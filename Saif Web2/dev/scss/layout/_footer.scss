@@ -1,0 +1,126 @@
+/* =============
+    Footer
+============= */
+footer {
+  padding-bottom: 10%;
+  #logo{
+    img{
+      margin-top: -20%;
+    }
+  }
+ #left{
+   grid-area: l;
+   color: $coal;
+   margin: 10% 20%;
+   text-align: center;
+   a{
+     margin-right: 3%;
+   }
+ }
+ #middle{
+  grid-area: m;
+  color: $coal;
+  margin: 5% 20%;
+}
+#right{
+  grid-area: r;
+  color: $coal;
+  padding: 0 20%;
+  margin-bottom: 10%;
+}
+#line{
+  height: 10px;
+  width: 90%;
+  margin: 2% auto 0 auto;
+  background-color: $white;
+}
+#top{
+text-align: right;
+
+img{
+  margin-left: 80%;  
+  margin-right: 5%;
+  width: 10%;
+}
+}
+#sm{
+  margin-top: 5%;
+  color: $white !important;
+  display: flex;
+  justify-content: space-evenly;
+  i{
+  font-size: 3em;
+  }
+  .fa-facebook-f:hover {
+    color: $coal;
+}
+.fa-tripadvisor:hover {
+  color: $coal;
+}
+.fa-twitter:hover {
+  color: $coal;
+}
+.fa-instagram:hover {
+  color: $coal;
+}
+a:link,
+            a:visited {
+                color: $white;
+                text-decoration: none;
+                transition: 0.2s;
+            }
+
+            a:hover,
+            a:active {
+                color: $coal;
+            }
+}
+background-color: $cyan;
+@include md{
+  #media{
+    margin-top: 10%;
+  display: grid;
+  grid-template-columns: 2% 30% 2% 30% 2% 30%;
+  grid-template-areas: ". l . m . r";
+  }
+  #left{
+    a{
+      margin-right: 200px;
+    }
+  }
+}
+@include lg{
+  #sm{
+    float: right;
+    margin-right: 7%;
+    margin-top: 25px;
+    a{
+      margin-right: 15%;
+    }
+  }
+  #top{
+    height: 3%;
+  }
+}
+#credits{
+  margin-left: 5%;
+  color: $coal;
+  margin-top: 5%;
+  margin-bottom: -7%;
+  font-size: .7em;
+}
+#left{
+  a:link,
+            a:visited {
+                color: $white;
+                text-decoration: none;
+                text-align: left;
+                transition: 0.2s;
+            }
+
+            a:hover,
+            a:active {
+                color: $coal;
+            }
+}
+}

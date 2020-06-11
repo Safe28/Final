@@ -1,0 +1,94 @@
+/* =============
+    Section 1
+============= */
+#section-1 {
+  padding-top: 190px;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 3% 55% 15% 18% 5%;
+  grid-template-areas: ". i i . ."
+    ". . t t ."
+    ". . b b .";
+  #title {
+    grid-area: t;
+    background-color: $white;
+    color: $black;
+    height: fit-content;
+    padding: 2%;
+    font-size: rem-calc(8.5);
+    width: fit-content;
+    margin-top: -240px;
+  }
+  #button {
+    grid-area: b;
+    color: $white;
+    background-color: $black;
+    height: fit-content;
+    padding: 2% 13% 2% 13%;
+    font-size: rem-calc(18);
+    width: fit-content;
+    margin-top: -50px;
+    transition: .2s;
+    opacity: .85;
+    cursor: pointer;
+    a {
+      #line {
+        height: 4px;
+        width: 100%;
+        background-color: $red;
+        margin-top: -7px;
+        border-radius: 25px;
+      }
+    }
+  }
+  #button:hover {
+    opacity: 1;
+  }
+  #img {
+    grid-area: i;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @include md2 {
+    #title {
+      font-size: rem-calc(10);
+      margin-top: -290px;
+    }
+    #button {
+      font-size: rem-calc(18);
+      margin-top: -70px;
+    }
+  }
+  @include md {
+    #title {
+      font-size: rem-calc(13);
+      margin-top: -350px;
+    }
+    #button {
+      font-size: rem-calc(20);
+      margin-top: -100px;
+    }
+  }
+  @include lg {
+    #title {
+      font-size: rem-calc(17);
+      margin-top: -400px;
+    }
+    #button {
+      font-size: rem-calc(22);
+      margin-top: -150px;
+    }
+  }
+  @include xl {
+    #title {
+      font-size: rem-calc(20);
+      margin-top: -500px;
+    }
+    #button {
+      font-size: rem-calc(25);
+      margin-top: -200px;
+    }
+  }
+}

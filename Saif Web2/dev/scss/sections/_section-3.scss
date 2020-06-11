@@ -1,0 +1,284 @@
+/* =============
+    Section 3
+============= */
+#section-3 {
+  background-color: #F5F5F5;
+  z-index: -2;
+  position: relative;
+  margin-top: 5%;
+  h2 {
+    text-align: left;
+    font-size: rem-calc(35);
+    margin-left: 5%;
+    width: fit-content;
+  }
+  img {
+    width: 50%;
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+  #gallery {
+    z-index: -1;
+    position: relative;
+    .line {
+      height: 5px;
+      width: 60%;
+      background-color: $cyan;
+      position: initial;
+      margin: 0 auto 0 auto;
+    }
+    #i1 {
+      width: 40%;
+      grid-area: i1;
+    }
+    #i3 {
+      width: 40%;
+      grid-area: i3;
+    }
+    #i2 {
+      grid-area: i2;
+    }
+    #i4 {
+      width: 20%;
+      grid-area: i4;
+    }
+    #vl1 {
+      background-color: $cyan;
+      width: 5px;
+      height: 30.5%;
+      position: absolute;
+      z-index: -1;
+      margin-left: 20%;
+    }
+    #vl2 {
+      background-color: $cyan;
+      width: 5px;
+      height: 45%;
+      position: absolute;
+      z-index: -1;
+      margin-left: 80%;
+      margin-top: -5px;
+    }
+    #hl1 {
+      height: 5px;
+      width: 50%;
+      z-index: -1;
+      background-color: $cyan;
+      position: absolute;
+      margin-top: 55%;
+      margin-left: 31%;
+    }
+    #vl3 {
+      background-color: $cyan;
+      width: 5px;
+      height: 15%;
+      position: absolute;
+      z-index: -1;
+      margin-left: 31%;
+      margin-top: 1.5%;
+    }
+  }
+  h3 {
+    text-align: right;
+    font-size: rem-calc(22);
+    margin: 3% 70% 0 3%;
+  }
+  p {
+    margin: -10% 20% 0 34%;
+  }
+  #vl4 {
+    background-color: $cyan;
+    width: 5px;
+    height: 7%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 71%;
+    margin-top: 5%;
+  }
+  #hl2 {
+    height: 5px;
+    width: 30%;
+    z-index: -1;
+    background-color: $cyan;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+  }
+  h4 {
+    padding-top: 20%;
+    margin: 0 65% 0 5%;
+    padding-bottom: 100%;
+    font-size: rem-calc(22);
+  }
+  #vl5 {
+    background-color: $cyan;
+    width: 5px;
+    height: 11%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 18%;
+    margin-top: -90%;
+  }
+  #hl3 {
+    height: 5px;
+    width: 30%;
+    z-index: -1;
+    background-color: $cyan;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: -58%;
+  }
+  #button {
+    grid-area: b;
+    color: $white;
+    background-color: $black;
+    height: fit-content;
+    padding: 2% 13% 2% 13%;
+    margin-left: 55%;
+    margin-top: -60%;
+    font-size: rem-calc(18);
+    width: fit-content;
+    opacity: .85;
+    transition: .2s;
+    z-index: 0;
+    a {
+      #linee {
+        height: 4px;
+        width: 100%;
+        background-color: $red;
+        margin-top: -7px;
+        border-radius: 25px;
+      }
+    }
+  }
+  #button:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  #vl6 {
+    background-color: $cyan;
+    width: 5px;
+    height: 12.5%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 73%;
+    margin-top: 10%;
+  }
+  #map {
+    width: 10%;
+    margin: 50% 0 0 64%;
+  }
+  @include md2 {
+    h2 {
+      margin-bottom: 10%;
+    }
+    #gallery {
+      img {
+        width: 80% !important;
+        margin: 5%;
+      }
+      #i1 {
+        margin-top: 40%;
+      }
+      #i2 {
+        border-top: 5px solid $cyan;
+        border-right: 5px solid $cyan;
+      }
+      #i3 {
+        margin-top: 40%;
+      }
+      #i4 {
+        margin-top: 100%;
+      }
+      display: grid;
+      grid-template-columns: 20% 50% 20% 10%;
+      grid-template-areas: "i1 i2 i3 i4";
+      #hl1 {
+        width: 30%;
+        margin-top: 30%;
+        margin-left: 38%;
+      }
+      #vl1 {
+        margin-left: 38%;
+        margin-top: 30%;
+        height: 40%;
+      }
+      #vl2 {
+        display: none;
+      }
+      #vl3 {
+        display: none;
+      }
+      #ll1 {
+        display: none;
+      }
+      #ll2 {
+        display: none;
+      }
+    }
+    h3 {
+      margin: -1% 63% 0 10%;
+    }
+    p {
+      margin: -8% 30% 0 40%;
+    }
+    #hl2 {
+      display: none;
+    }
+    #vl4 {
+      display: none;
+    }
+    #vl5 {
+      height: 11%;
+      margin-left: 76%;
+      margin-top: -90%;
+    }
+    #vl6 {
+      height: 5%;
+      margin-left: 17.6%;
+      margin-top: -11%;
+    }
+    h4 {
+      margin: 0 5% 0 65%;
+      text-align: center;
+    }
+    #map {
+      width: 10%;
+      margin: -35% 72% 0 8%;
+      padding-bottom: 30%;
+    }
+  }
+  @include md {
+    p {
+      margin: -6% 30% 0 40%;
+    }
+    #vl6 {
+      margin-top: -10.3%;
+    }
+  }
+  @include lg {
+    p {
+      margin: -2% 30% 0 40%;
+    }
+    h3 {
+      margin-top: 2%;
+    }
+    #vl6 {
+      margin-top: -9.9%;
+    }
+  }
+  @include xl {
+    p {
+      margin: -2% 30% 0 40%;
+    }
+    h3 {
+      margin-top: 2%;
+    }
+    #vl6 {
+      margin-top: -9.6%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* =============
+    Navigation
+============= */
+#nav-container {
+    ul {
+        height: 100%;
+        text-align: center;
+        @include lg {
+            display: flex;
+            justify-content: flex-end;
+        }
+        li {
+
+            @include lg {
+                align-items: center;
+                display: flex;
+                margin: 0px 30px 0 0;
+            }
+            a:link,
+            a:visited {
+                color: $coal;
+                text-decoration: none;
+                transition: 0.2s;
+            }
+            a:hover,
+            a:active {
+                color: $cyan;
+            }
+        }
+    }
+}

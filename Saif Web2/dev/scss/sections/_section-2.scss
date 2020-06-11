@@ -1,0 +1,44 @@
+/* =============
+    Section 2
+============= */
+#section-2 {
+    padding: 10%;
+    margin-bottom: 7%;
+    #line {
+        height: 8px;
+        width: 70%;
+        background-color: $yellow;
+        border-radius: 25px;
+        grid-area: l;
+    }
+    #bk {
+        grid-area: b;
+    }
+    h2 {
+        font-size: rem-calc(18);
+        grid-area: h2;
+    }
+    h3 {
+        font-size: rem-calc(14);
+        grid-area: h3;
+    }
+    p {
+        font-size: rem-calc(12);
+        grid-area: p;
+    }
+    display: grid;
+    grid-template-columns: 5% 25% 2% auto 5%;
+    grid-template-areas: ". l . h2 ."
+    ". . . h3 ."
+    ". . . p ."
+    ". . . b .";
+    #bk {
+        position: absolute;
+        background-color: $cyan;
+        z-index: -1;
+        height: 30vh;
+        width: 50%;
+        margin-left: 30%;
+        margin-top: -5%;
+    }
+}
